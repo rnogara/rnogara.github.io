@@ -10,7 +10,6 @@
         body {
             margin: 0;
             background-color: #04151F;
-            text-decoration: none;
             color: #EFD6AC;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
@@ -24,6 +23,7 @@
             color: #C44900;
             font-family: 'Indie Flower', cursive;
             font-size: 60px;
+            margin-top: 100px;
         }
         h3 {
             color: #432534;
@@ -32,15 +32,41 @@
                1px 1px #EFD6AC, -1px -1px #EFD6AC, 1px -1px #EFD6AC, -1px 1px #EFD6AC;
             font-size: 30px;
         }
+        .button {
+            color: #183A37;
+            padding: 10px;
+            font: 18px;
+            text-decoration: none;
+            background-color: #EFD6AC;
+            border-radius: 12px;
+            margin: 10px;
+        }
+        .menu {
+            width: 100%;
+            margin: 5px 20px 5px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 50px;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .sobre {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 30px;
+            border: 1px dotted #EFD6AC;
+            border-radius: 20px;
+        }
         
     </style>
 </head>
 <body>
     <header>
-        <p>Menu</p>
-        <a href="#foto">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#links">Links</a>
+        <p class="menu">Menu</p>
+        <a class="button" href="#foto">Sobre</a>
+        <a class="button" href="#habilidades">Habilidades</a>
+        <a class="button" href="#links">Links</a>
     </header>
     <main>
         <div class="container">
@@ -51,14 +77,16 @@
             <br/>
             <em>Sou apenas uma nerd gamer aspirante a dev.</em>
             <br/> 
-            <p>Nasci em Joaçaba-SC, morei em algumas cidades do Paraná e Santa Catarina e atualmente estou no Rio de Janeiro - RJ.
+            <div class="sobre">
+                <p>Nasci em Joaçaba-SC, morei em algumas cidades do Paraná e Santa Catarina e atualmente estou no Rio de Janeiro - RJ.
                 Me formei em Engenharia Florestal e me especializei em uso de tecnologias com sensores embarcados em  UAPs e satélites. Logo após me formar entrei numa StartUp onde consegui superar minhas dificuldades e consegui o selo do Inovativa.
                 Atualmente busco mudar de carreira e me tornar uma desenvolvedora web.
-            </p>
+                </p>
+            </div>
             <br/>
             <hr/>
             <h3 id="habilidades">Algumas de minhas habilidades:</h3>
-            <ul>
+            <ul class="lista">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
@@ -71,13 +99,8 @@
         </div>
     </main>
     <footer id="links">
-        <a href="#foto"><strong>Quem sou eu?</strong></a>
-        <br/>
-        <a href="diolinux.com.br" target="_blank">Duvidas em linux?</a>
+        <a class="button" href="#foto"><strong>Quem sou eu?</strong></a>
+        <a class="button" href="https://www.diolinux.com.br" target="_blank">Duvidas em linux?</a>
     </footer>
 </body>
 </html>
-
-//
-Um índice com links internos para as diferentes seções do seu portfólio.
-//
