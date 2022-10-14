@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        body {
+            margin: 0;
+            background-color: #04151F;
+            text-decoration: none;
+            color: #EFD6AC;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 60%;
+            padding: 10px;
+            margin: auto;
+        }
+        h2 {
+            color: #C44900;
+            font-family: 'Indie Flower', cursive;
+            font-size: 60px;
+        }
+        h3 {
+            color: #432534;
+            /* https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
+            text-shadow: 2px 0 #EFD6AC, -2px 0 #EFD6AC, 0 2px #EFD6AC, 0 -2px #EFD6AC,
+               1px 1px #EFD6AC, -1px -1px #EFD6AC, 1px -1px #EFD6AC, -1px 1px #EFD6AC;
+            font-size: 30px;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +43,7 @@
         <a href="#links">Links</a>
     </header>
     <main>
-        <div>
+        <div class="container">
             <h2>Olá! Eu sou a <strong>Roberta Nogara</strong></h2>
             <br/>
             <img id="foto" src="assets/perfil.jpeg" alt="foto de frente da roberta nogara">
