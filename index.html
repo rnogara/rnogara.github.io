@@ -5,69 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-        body {
-            margin: 0;
-            background-color: #04151F;
-            color: #EFD6AC;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        .container {
-            text-align: center;
-            width: 60%;
-            padding: 10px;
-            margin: auto;
-        }
-        h2 {
-            color: #C44900;
-            font-family: 'Indie Flower', cursive;
-            font-size: 60px;
-            margin-top: 100px;
-        }
-        h3 {
-            color: #432534;
-            /* https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
-            text-shadow: 2px 0 #EFD6AC, -2px 0 #EFD6AC, 0 2px #EFD6AC, 0 -2px #EFD6AC,
-               1px 1px #EFD6AC, -1px -1px #EFD6AC, 1px -1px #EFD6AC, -1px 1px #EFD6AC;
-            font-size: 30px;
-        }
-        .button {
-            color: #183A37;
-            padding: 10px;
-            font: 18px;
-            text-decoration: none;
-            background-color: #EFD6AC;
-            border-radius: 12px;
-            margin: 10px;
-        }
-        .menu {
-            width: 100%;
-            margin: 5px 20px 5px;
-            font-family: 'Indie Flower', cursive;
-            font-size: 50px;
-        }
-        img {
-            border-radius: 50%;
-        }
-        .sobre {
-            width: 70%;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 30px;
-            border: 1px dotted #EFD6AC;
-            border-radius: 20px;
-        }
-        .lista {
-            text-align: left;
-            margin: 20px 30%;
-            line-height: 40px;
-        }
-        .text-highlight{
-            color: #C44900;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
     <header>
@@ -79,16 +17,16 @@
     <main>
         <div class="container">
             <h2>Olá! Eu sou a <strong>Roberta Nogara</strong></h2>
-            <br/>
-            <img id="foto" src="assets/perfil.jpeg" alt="foto de frente da roberta nogara">
-            <br/>
-            <br/>
-            <em>Sou apenas uma nerd gamer aspirante a dev.</em>
-            <br/> 
-            <div class="sobre">
-                <p>Nasci em Joaçaba-SC, morei em algumas cidades do Paraná e Santa Catarina e <strong>atualmente estou no Rio de Janeiro - RJ</strong>.
-                Me formei em Engenharia Florestal e me especializei em uso de tecnologias com sensores embarcados em  UAPs e satélites. Logo após me formar entrei numa StartUp onde consegui superar minhas dificuldades e consegui o selo do Inovativa.
-                <span class="text-highlight">Atualmente busco mudar de carreira e me tornar uma desenvolvedora web</span>.
+            <div class="info-wrapper">
+                <div class="foto">
+                    <img id="foto" src="assets/perfil.jpeg" alt="foto de frente da roberta nogara">
+                    <em class="descricao">Sou apenas uma nerd gamer aspirante a dev.</em>
+                </div>
+                <div class="sobre">
+                    <p>Nasci em Joaçaba-SC, morei em algumas cidades do Paraná e Santa Catarina e <strong>atualmente estou no Rio de Janeiro - RJ</strong>.
+                    Me formei em Engenharia Florestal e me especializei em uso de tecnologias com sensores embarcados em  UAPs e satélites. Logo após me formar entrei numa StartUp onde consegui superar minhas dificuldades e consegui o selo do Inovativa.
+                    <span class="text-highlight">Atualmente busco mudar de carreira e me tornar uma desenvolvedora web</span>.
+                </div>
             </div>
             <br/>
             <hr/>
